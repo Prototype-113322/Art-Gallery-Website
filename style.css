@@ -1,0 +1,499 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --clr-gold: #D89E66;
+    --clr-black: #141414;
+    --clr-gray: #454545;
+    --clr-white: #FFFFFF;
+
+    /* font-sizes */
+    --fs-900: 3.75rem;
+    --fs-800: 3.125rem;
+    --fs-700: 3.125rem;
+    --fs-600: 2rem;
+    --fs-500: 1.125rem;
+    --fs-400: 1rem;
+   
+    /* font-families */
+    --ff-shoulders: "Big Shoulders Display", cursive;
+    --ff-outfit: "Outfit", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--ff-shoulders);
+}
+
+p{
+    font-family: var(--ff-outfit);
+    font-size: 1rem;
+}
+
+/* MOBILE DESIGN */
+    .main-container{
+        min-width: 19.5625rem;
+    }
+
+    .container{
+        padding: 0rem 1rem;
+    }
+
+    .header-image-mobile-container{
+        width: 100%;
+        height: auto;
+    }
+
+    .header-mobile{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .heading-lg{
+        font-family: var(--ff-shoulders);
+        font-weight: 800;
+        font-size: 4rem;
+        padding-top: 2rem;
+        line-height: 3.6rem;
+    }
+
+    .paragraph{
+        color: var(--clr-gray);
+        padding-top: 1.5rem;
+        line-height: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .button-left-part{
+        height: 3.5rem;
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 0 2rem;
+        font-family: var(--ff-shoulders);
+        letter-spacing: 0.2rem;
+        font-weight: 800;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .button-right-part{
+        height: 3.5rem;
+        width: 2.9rem;
+        background-color: var(--clr-gold);
+        border: none;
+        cursor: pointer;
+    }
+
+    .button-left-part:hover {
+        opacity: .7;
+      }
+
+    .button-right-part:hover {
+        opacity: .7;
+      }
+
+    .button-flex-container{
+        display: flex;
+        padding-bottom: 5rem;
+    }
+
+    .card-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card-5{
+        background-color: #141414;
+        padding: 3rem 2rem;
+        margin-bottom: 7rem;
+    }
+
+    .card-img{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .heading-white{
+        color: white;
+        padding: 0;
+    }
+
+    .paragraph-white{
+        color:white;
+        padding: 1.5rem 0 0 0;
+        line-height: 1.5rem;
+
+    }
+
+    .footer-container{
+        background-color: #141414;
+        height: 100%;
+        padding: 3rem 2rem;
+    }
+
+    .social-flex-container{
+        display: flex;
+        flex-direction: row;
+        gap: 1.3rem;
+        padding-top: 1.8rem;
+    }
+
+    .social-btn{
+        cursor: pointer;
+
+    }
+
+    @media(max-width:25rem){
+        .card-tablet-img{
+            display: none;                                  
+        }
+        
+    .header-img-tablet{
+        display: none;
+    }
+        
+    .grid-desktop{
+        display: none;
+    }
+
+    .card-desktop-img{
+        display: none;
+    }
+
+    }
+
+/* TABLET DESIGN */
+
+@media(min-width:25.0625rem) and (max-width:48rem){
+    p{
+        font-size: 1.125rem;
+    }
+
+    h2,h3,h4,h5,h6{
+        font-size: 1.25rem;
+    }
+
+    .main-container{
+        min-width: 47.8125rem;
+    }
+
+    .grid-desktop{
+        display: none;
+    }
+
+    .card-desktop-img{
+        display: none;
+    }
+
+    .header-mobile{
+        display: none;
+    }
+
+    .card-img{
+        display: none;
+    }
+
+
+    .header-grid-tablet{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 6rem;
+    }
+
+    .second-grid-tablet-element{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding-right: 0.5rem;
+        right: 4rem;
+    }
+     
+    .card-tablet-grid{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        padding-bottom: 10rem;
+
+    }
+    
+    .container{
+        padding: 0 2rem;
+    }
+    
+
+    .card-tablet-img{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .card-2{
+        grid-area: 1/1/2/4;
+    }
+
+    .card-1{
+        grid-area: 1/5/2/9;
+    }
+
+    .card-5{
+        grid-area:3/6/4/9;
+        margin-bottom: 0px;
+        
+    }
+
+    .card-3{
+        grid-area: 2/1/4/6;
+    }
+
+    .card-4{
+        grid-area: 2/6/3/9;
+    }
+
+    .card-flex{
+        gap: 0.5rem;
+    }
+
+    .card-three-tablet-img{
+        height: 100%;
+    }
+
+    .heading-card-5{
+        padding-top: 5.5rem;
+    }
+}
+
+
+
+/* DESKTOP DESIGN */
+
+@media(min-width:48.0625rem){
+    p{
+        font-size: 1.0625rem;
+    }
+
+    h1{
+        font-size: 1.25rem;
+    }
+
+    .main-container{
+        min-width: 83.375rem;
+    }
+
+    .header-mobile{
+        display: none;
+    }
+
+    .card-img{
+        display: none;
+    }
+
+    .header-img-tablet{
+        display: none;
+    }
+
+    .card-tablet-img{
+        display: none;
+    }
+
+    .second-grid-tablet-element{
+        display: none;
+    }
+    
+    .grid-desktop{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-bottom: 15rem;
+    }
+
+    .card-desktop-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-item{
+        background-color: var(--clr-black);
+        height: auto;
+    }
+
+    .heading-desktop{
+        position: relative;
+        top: 12.5rem;
+        left: 15.625rem;
+    }
+
+    .color-black{
+       color: var(--clr-black);
+    }
+    
+
+    .right-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10rem;
+        position: relative;
+        right: 3rem;
+    }
+    
+
+    
+
+    .header-img-desktop{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container{
+        padding: 0 6rem;
+    }
+    
+    .card-tablet-grid{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        padding-bottom: 10rem;
+    }
+
+    .main-heading{
+        display: none;
+    }
+    
+ 
+    .card-tablet-img{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .card-2{
+        grid-area: 1/1/2/4;
+    }
+
+    .card-1{
+        grid-area: 1/5/2/9;
+    }
+
+    .card-5{
+        grid-area:3/6/4/9;
+        margin-bottom: 0px;
+        background-color: #141414;
+        padding: 7rem 2rem 7rem 2rem;
+        
+    }
+
+    .paragraph-card-5{
+        padding-right: 3rem;
+
+    }
+    .card-3{
+        grid-area: 2/1/4/6;
+    }
+
+    .card-4{
+        grid-area: 2/6/3/9;
+    }
+
+    .card-flex{
+        gap: 0.5rem;
+    }
+
+    .card-three-tablet-img{
+        height: 100%;
+    }
+
+    .heading-card-5{
+        padding-top: 5.5rem;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .paragraph-white{
+        width: 25rem;
+    }
+
+    .img{
+        padding-top: 2rem;
+    }
+}
+
+/*LARGER DEVICES*/
+
+@media(min-width:83.4375rem){  /* 1335px */
+
+    p{
+        font-size: 2rem;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    .heading-desktop{
+        position: relative;
+        top: 0;
+        left: 0;
+        color: white;
+    }
+
+    .color-black{
+        color: white;
+    }
+
+    .logo-container img{
+        width:15.625rem;
+        height: auto;
+    }
+
+    .social-btn{
+        width: 1.875rem;
+        height: auto;
+    }
+
+}
+
+
+@media(min-width:90rem){   /* LARGER THAN 1440px */
+    p{
+        font-size: 1.2rem;
+    }
+
+
+    .logo-container img{
+        width:12.5rem;
+        height: auto;
+    }
+
+    .social-btn{
+        width: 1.5625rem;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
